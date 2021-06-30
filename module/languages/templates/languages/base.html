@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Info</title>
+
+</head>
+<body>
+    <h1>Languages</h1>
+    <u1>
+        {% for language in languages %}
+            <li>
+            {{ language.name }} : {{ language.paradigm }}
+            </li>
+        {% endfor %}
+    </u1></body>
+</html>
